@@ -29,4 +29,4 @@
 }
 </style>
 
-<h1>${message}. go back to <a class = "button" href="/"> main page</a></h1>
+<h1>Something went wrong, please try again later. go back to <a class = "button" href="/"> main page</a></h1>
