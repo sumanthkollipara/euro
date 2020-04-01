@@ -15,16 +15,6 @@
  <script src="webjars/jquery/3.0.0/jquery.min.js"></script>
 </head>
 
-<script type="text/javascript">
-function getHistory(key) {
-	debugger;
-	$("#base").val(key);
-	alert($("#base").val());
-	$("#converter1").submit();
-	$("#converter2").submit();
-}
-</script>
-
 <style type="text/css">
 .button {
     display: block;
@@ -39,30 +29,4 @@ function getHistory(key) {
 }
 </style>
 
-
- <form:form  modelAttribute="currencyConversionBean"   method="GET"  action="" id ="converter1" >
- 
- <br>
- <br>
- <center>
-<table border="1">
-  <tr>
-    <th>Currency type</th>
-    <th>Euro value</th>
-    <th>History</th>
-  </tr>
-  
-   <c:forEach items="${currencyMap}" var="currencyMap" varStatus="counter">
-                    <tr>
-                        <td>${currencyMap.key}</td>
-                        <td>${currencyMap.value}</td>
-                       <td><a class = "button" href="/${currencyMap.key}/history"> History</a></td>
-                    </tr>
-                </c:forEach>
-  
-</table>
-</center>
-<td>
-<br>
-<center><a class = "button" href="/history"> All History</a></center>
-</form:form>
+<h1>${message}. go back to <a class = "button" href="/"> main page</a></h1>
